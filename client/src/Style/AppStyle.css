@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+html, body {
+  margin: 0;
+  font-family: Montserrat;
+}
+
+html .App, body .App {
+  margin: 0;
+}
+
+html .App > .Home, body .App > .Home {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 50px;
+}
+
+html .App > .Home > .search-form, body .App > .Home > .search-form {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+html .App > .Home > .search-form > select, body .App > .Home > .search-form > select {
+  width: 200px;
+  margin-left: 30px;
+  height: 27px;
+  border-radius: 10px;
+}
+
+html .App > .Home > .search-form > .search, body .App > .Home > .search-form > .search {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 1px solid black;
+  padding: 5px;
+  border: 1px solid black;
+}
+
+html .App > .Home > .search-form > button, body .App > .Home > .search-form > button {
+  padding: 6px;
+  border: none;
+  border-left: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #3ba2f7;
+  color: white;
+}
+
+html .App > .Home > .search-form > button:hover, body .App > .Home > .search-form > button:hover {
+  cursor: pointer;
+}
+
+html .App > .Home > .buttons-div, body .App > .Home > .buttons-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+html .App > .Home > .buttons-div > button, body .App > .Home > .buttons-div > button {
+  width: 150px;
+  border: none;
+  border-radius: 15px;
+  padding: 8px;
+  font-family: Montserrat;
+  background-color: #3ba2f7;
+  color: white;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+html .App > .Home > .buttons-div > button:hover, body .App > .Home > .buttons-div > button:hover {
+  cursor: pointer;
+}
+
+html .App > .Home > .Products, body .App > .Home > .Products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+html .App > .Home > .Products > .product-div, body .App > .Home > .Products > .product-div {
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 30%;
+  padding: 20px;
+}
+
+html .App > .Home > .Products > .product-div > p:nth-child(1), body .App > .Home > .Products > .product-div > p:nth-child(1) {
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+html .App > .Home > .Products > .product-div > p:nth-child(2), body .App > .Home > .Products > .product-div > p:nth-child(2) {
+  font-weight: 600;
+}
+
+html .App > .Home > .Products > .product-div > p:nth-child(3), body .App > .Home > .Products > .product-div > p:nth-child(3) {
+  max-width: 60%;
+  font-size: 11px;
+}
+
+html .App > .Home > .Products > .product-div > .button-div, body .App > .Home > .Products > .product-div > .button-div {
+  display: flex;
+  width: 50%;
+  justify-content: space-evenly;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+html .App > .Home > .Products > .product-div > .button-div > button, body .App > .Home > .Products > .product-div > .button-div > button {
+  width: 70px;
+  border-radius: 15px;
+  padding: 5px;
+  font-family: Montserrat;
+  border: none;
+}
+
+html .App > .Home > .Products > .product-div > .button-div > button:nth-child(1), body .App > .Home > .Products > .product-div > .button-div > button:nth-child(1) {
+  background-color: #2bbce9;
+  color: white;
+}
+
+html .App > .Home > .Products > .product-div > .button-div > button:nth-child(3), body .App > .Home > .Products > .product-div > .button-div > button:nth-child(3) {
+  background-color: red;
+  color: white;
+}
+
+html .App > .Home > .Products > .product-div > .button-div > button:nth-child(2), body .App > .Home > .Products > .product-div > .button-div > button:nth-child(2) {
+  background-color: grey;
+  color: white;
+}
+
+html .App > .Home > .Products > .product-div > .button-div > button:hover, body .App > .Home > .Products > .product-div > .button-div > button:hover {
+  cursor: pointer;
+}
+
+html .App > .AddProduct, body .App > .AddProduct {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+html .App > .AddProduct > h2, body .App > .AddProduct > h2 {
+  margin-top: 30px;
+}
+
+html .App > .AddProduct > button, body .App > .AddProduct > button {
+  border: none;
+  margin-top: 20px;
+  padding: 7px;
+  border-radius: 20px;
+  color: white;
+  background-color: #2bbce9;
+  font-family: Montserrat;
+}
+
+html .App > .AddProduct > button:hover, body .App > .AddProduct > button:hover {
+  cursor: pointer;
+}
+
+html .App > .AddProduct > .form, body .App > .AddProduct > .form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 30px;
+  width: 300px;
+}
+
+html .App > .AddProduct > .form > label, body .App > .AddProduct > .form > label {
+  margin-bottom: 10px;
+  width: 70%;
+}
+
+html .App > .AddProduct > .form > .field, body .App > .AddProduct > .form > .field {
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+  width: 70%;
+}
+
+html .App > .AddProduct > .form > .field::placeholder, body .App > .AddProduct > .form > .field::placeholder {
+  color: #c4c4c4;
+  font-size: 11px;
+}
+
+html .App > .AddProduct > .form > button, body .App > .AddProduct > .form > button {
+  margin-top: 20px;
+  border-radius: 15px;
+  padding: 7px;
+  font-family: Montserrat;
+  border: none;
+  background-color: #3ba2f7;
+  color: white;
+}
+
+html .App > .AddProduct > .form > button:hover, body .App > .AddProduct > .form > button:hover {
+  cursor: pointer;
+}
+
+html .App > .Report, body .App > .Report {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+html .App > .Report > div, body .App > .Report > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 50px;
+}
+
+html .App > .Report > div > p:nth-child(1), body .App > .Report > div > p:nth-child(1) {
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+html .App > .Report > button, body .App > .Report > button {
+  border: none;
+  margin-top: 20px;
+  padding: 7px;
+  border-radius: 20px;
+  color: white;
+  background-color: #2bbce9;
+  font-family: Montserrat;
+}
+
+html .App > .Report > button:hover, body .App > .Report > button:hover {
+  cursor: pointer;
+}

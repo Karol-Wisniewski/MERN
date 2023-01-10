@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+html, body {
+    margin: 0;
+    font-family: Montserrat;
+
+    .App {
+        margin: 0;
+    
+    
+        > .Home {
+            min-width: 100vw;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            margin-bottom: 50px;
+
+            > .search-form {
+                margin-top: 10px;
+                margin-bottom: 20px;
+                
+                > select {
+                    width: 200px;
+                    margin-left: 30px;
+                    height: 27px;
+                    border-radius: 10px;
+                }
+
+                > .search {
+                    border-top-left-radius: 10px;
+                    border-bottom-left-radius: 10px;
+                    border: 1px solid black;
+                    padding: 5px;
+                    border: 1px solid black;
+                }
+
+                > button {
+                    padding: 6px;
+                    border: none;
+                    border-left: none;
+                    border-top-right-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                    background-color: rgb(59, 162, 247);
+                    color: white;
+                }
+
+                > button:hover {
+                    cursor: pointer;
+                }
+            }
+
+            > .buttons-div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                > button {
+                    width: 150px;
+                    border: none;
+                    border-radius: 15px;
+                    padding: 8px;
+                    font-family: Montserrat;
+                    background-color: rgb(59, 162, 247);
+                    color: white;
+                    margin-bottom: 10px;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                }
+    
+                > button:hover {
+                    cursor: pointer;
+                }
+            }
+
+            > .Products {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+
+                > .product-div {
+                    border: 1px solid black;
+                    border-radius: 10px;
+                    margin-top: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    width: 30%;
+                    padding: 20px;
+
+                    > p:nth-child(1) {
+                        font-weight: 900;
+                        letter-spacing: 2px;
+                    }
+
+                    > p:nth-child(2) {
+                        font-weight: 600;
+                    }
+
+                    > p:nth-child(3) {
+                        max-width: 60%;
+                        font-size: 11px;
+                    }
+
+                    > .button-div {
+                        display: flex;
+                        width: 50%;
+                        justify-content: space-evenly;
+                        margin-top: 30px;
+                        margin-bottom: 10px;
+
+                        > button {
+                            width: 70px;
+                            border-radius: 15px;
+                            padding: 5px;
+                            font-family: Montserrat;
+                            border: none;
+                        }
+                        
+                        > button:nth-child(1) {
+                            background-color: rgb(43, 188, 233);
+                            color: white;
+                        }
+
+                        > button:nth-child(3) {
+                            background-color: red;
+                            color: white;
+                        }
+
+                        > button:nth-child(2) {
+                            background-color: grey;
+                            color: white;
+                        }
+
+                        > button:hover {
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+
+        > .AddProduct {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            > h2 {
+                margin-top: 30px;
+            }
+
+            > button {
+                border: none;
+                margin-top: 20px;
+                padding: 7px;
+                border-radius: 20px;
+                color: white;
+                background-color: rgb(43, 188, 233);
+                font-family: Montserrat;
+            }
+
+            > button:hover {
+                cursor: pointer;
+            }
+
+            > .form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid black;
+                border-radius: 10px;
+                padding: 30px;
+                width: 300px;
+
+                > label {
+                    margin-bottom: 10px;
+                    width: 70%;
+                }
+
+                > .field {
+                    margin-bottom: 10px;
+                    border-radius: 5px;
+                    border: 1px solid black;
+                    width: 70%;
+                }
+
+                > .field::placeholder {
+                    color: rgb(196, 196, 196);
+                    font-size: 11px;
+                }
+
+                > button {
+                    margin-top: 20px;
+                    border-radius: 15px;
+                    padding: 7px;
+                    font-family: Montserrat;
+                    border: none;
+                    background-color: rgb(59, 162, 247);
+                    color: white;
+                }
+
+                > button:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        > .Report {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            > div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid black;
+                border-radius: 10px;
+                padding: 50px;
+
+                > p:nth-child(1) {
+                    letter-spacing: 2px;
+                    font-weight: 600;
+                }
+            }
+
+            > button {
+                border: none;
+                margin-top: 20px;
+                padding: 7px;
+                border-radius: 20px;
+                color: white;
+                background-color: rgb(43, 188, 233);
+                font-family: Montserrat;
+            }
+
+            > button:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
