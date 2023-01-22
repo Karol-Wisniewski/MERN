@@ -1,6 +1,6 @@
 const {MongoClient} = require("mongodb");
 
-const Db = process.env.MONGO_URI;
+const Db = process.env.MONGO_URI || "mongodb+srv://mongodb:test1234@cluster0.jhfxj3s.mongodb.net/test";
 
 console.log(Db);
 
@@ -15,7 +15,7 @@ module.exports = {
     connectToServer: function(callback) {
         client.connect(function(err, db) {
             if (db) {
-                _db = db.db("test_example")
+                _db = db.db("test")
                 console.log("Successfully connected to MongoDB");
                 // const defaultProducts = [
                 //     {
