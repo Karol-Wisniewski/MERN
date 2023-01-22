@@ -1,1 +1,1 @@
-# mongo-express
+# MERN app
