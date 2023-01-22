@@ -25,7 +25,7 @@ const AddProduct = () => {
                     }
                 }
                 onSubmit={async (values, { resetForm }) => {
-                        await axios.post("http://localhost:5000/products", values)
+                        await axios.post("https://express-mongo-gveo.onrender.com/products", values)
                         .then((res) => {
                             console.log(res);
                             resetForm();

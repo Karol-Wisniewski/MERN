@@ -9,7 +9,7 @@ const Products = ({products, getProducts, setProducts}) => {
 
     const deleteProduct = async (productId) => {
         try {
-            const res = await axios.delete(`http://localhost:5000/products/${productId}`);
+            const res = await axios.delete(`https://express-mongo-gveo.onrender.com/products/${productId}`);
             console.log(res);
             getProducts().then(data => setProducts(data.data));
         } catch (err) {

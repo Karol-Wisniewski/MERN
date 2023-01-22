@@ -18,7 +18,7 @@ const EditProduct = () => {
     const id = params.id;
 
     const getProductById = async () => {
-        return axios.get(`http://localhost:5000/products/${id}`)
+        return axios.get(`https://express-mongo-gveo.onrender.com/products/${id}`)
         .then(res => {
             console.log("EDITED PRODUCT:")
             console.log(res.data)
@@ -45,7 +45,7 @@ const EditProduct = () => {
                     }
                 }
                 onSubmit={async (values, { resetForm }) => {
-                        await axios.put(`http://localhost:5000/products/${id}`, 
+                        await axios.put(`https://express-mongo-gveo.onrender.com/products/${id}`, 
                         {
                             name: values.name ? values.name : product.name,
                             price: values.price ? values.price : product.price,

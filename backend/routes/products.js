@@ -26,7 +26,7 @@ productsRoutes.route("/products").get(function (req, res) {
         }
     }
 
-    let db_connect = dbo.getDb("products");
+    let db_connect = dbo.getDb("test");
     db_connect.collection("products").find(findQuery).sort(sortQuery).toArray(function (err, result) {
         if (err) throw err;
         res.json(result);
@@ -35,7 +35,7 @@ productsRoutes.route("/products").get(function (req, res) {
 
 //GET ONE
 productsRoutes.route("/products/:id").get(function (req, res) {
-    let db_connect = dbo.getDb("products");
+    let db_connect = dbo.getDb("test");
     let myquery = { _id: ObjectId(req.params.id) };
     db_connect.collection("products").findOne(myquery, function (err, result) {
         if (err) throw err;
@@ -45,7 +45,7 @@ productsRoutes.route("/products/:id").get(function (req, res) {
 
 //POST
 productsRoutes.route("/products").post(function (req, response) {
-    let db_connect = dbo.getDb("products");
+    let db_connect = dbo.getDb("test");
     let myobj = {
         name: req.body.name,
         description: req.body.description,
@@ -61,7 +61,7 @@ productsRoutes.route("/products").post(function (req, response) {
 
 //UPDATE
 productsRoutes.route("/products/:id").put(function (req, response) {
-    let db_connect = dbo.getDb("products");
+    let db_connect = dbo.getDb("test");
     let myquery = { _id: ObjectId(req.params.id) };
     let newValues = {
         $set: {
@@ -81,7 +81,7 @@ productsRoutes.route("/products/:id").put(function (req, response) {
 
 //DELETE
 productsRoutes.route("/products/:id").delete(function (req, res) {
-    let db_connect = dbo.getDb("products");
+    let db_connect = dbo.getDb("test");
     let myquery = { _id: ObjectId(req.params.id) };
     db_connect.collection("products").deleteOne(myquery, function (err, obj) {
         if (err) throw err;
@@ -92,7 +92,7 @@ productsRoutes.route("/products/:id").delete(function (req, res) {
 
 //REPORT
 productsRoutes.route("/products/:id/report").get(function (req, res) {
-    let db_connect = dbo.getDb("products");
+    let db_connect = dbo.getDb("test");
     db_connect.collection("products").aggregate([{ $match: { _id: ObjectId(req.params.id) } },
     {
         $project: {

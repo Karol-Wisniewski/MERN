@@ -14,7 +14,7 @@ const Report = () => {
     const navigate = useNavigate();
 
     const getReportData = (id) => {
-        return axios.get(`http://localhost:5000/products/${id}/report`)
+        return axios.get(`https://express-mongo-gveo.onrender.com/products/${id}/report`)
         .then(res => {
             console.log("PRODUCT REPORT:")
             console.log(res.data[0])

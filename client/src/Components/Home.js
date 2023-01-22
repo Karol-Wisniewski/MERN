@@ -21,13 +21,13 @@ const Home = () => {
 
     const getProducts = async (searchParam, sortParam) => {
         if (searchParam && sortParam) {
-            return axios.get(`http://localhost:5000/products?search=${searchParam}&sort=${sortParam}`);
+            return axios.get(`https://express-mongo-gveo.onrender.com/products?search=${searchParam}&sort=${sortParam}`);
         } else if (searchParam) {
-            return axios.get(`http://localhost:5000/products?search=${searchParam}`);
+            return axios.get(`https://express-mongo-gveo.onrender.com/products?search=${searchParam}`);
         } else if (sortParam) {
-            return axios.get(`http://localhost:5000/products?sort=${sortParam}`);
+            return axios.get(`https://express-mongo-gveo.onrender.com/products?sort=${sortParam}`);
         } else {
-            return axios.get('http://localhost:5000/products');
+            return axios.get('https://express-mongo-gveo.onrender.com/products');
         }
     };
 
