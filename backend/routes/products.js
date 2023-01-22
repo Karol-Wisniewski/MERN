@@ -3,6 +3,12 @@ const productsRoutes = express.Router();
 const dbo = require("../db/conn");
 const ObjectId = require("mongodb").ObjectId;
 
+
+productsRoutes.route("/").get(function (req, res) {
+    res.json("Connected to mongo instance!");
+});
+
+
 //GET ALL
 productsRoutes.route("/products").get(function (req, res) {
     const { sort, search } = req.query;

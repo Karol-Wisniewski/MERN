@@ -16,7 +16,7 @@ module.exports = {
         client.connect(function(err, db) {
             if (db) {
                 _db = db.db("test")
-                console.log("Successfully connected to MongoDB");
+                console.log(`Successfully connected to MongoDB`);
                 // const defaultProducts = [
                 //     {
                 //         name: "NIKE AIR FORCE 1 '07",
