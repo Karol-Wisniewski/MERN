@@ -1,6 +1,6 @@
 const {MongoClient} = require("mongodb");
 
-const Db = process.env.MONGO_URI || "mongodb+srv://mongodb:test1234@cluster0.jhfxj3s.mongodb.net/test";
+const Db = process.env.MONGO_URI
 
 console.log(Db);
 
